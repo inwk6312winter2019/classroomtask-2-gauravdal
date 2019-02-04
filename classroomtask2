@@ -1,0 +1,6 @@
+import ipaddr
+
+
+mask = ipaddr.IPv4Network('192.192.45.1/25')
+mask.netmask
+print(IPv4Address('255.255.255.128'))
