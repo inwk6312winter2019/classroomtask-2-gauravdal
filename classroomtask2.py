@@ -4,11 +4,16 @@ class ipaddress(object):
 		self.mask_list =  mask.split(".")
 
 	def print_addr(self):
+		for str1 in self.ipaddr_list:
+			print(str1,".",end="")
+		print("\t")
 		for item in self.ipaddr_list:
-			print(item,bin(int(item)),sep="\t", end =".")
-
+			print(bin(int(item)),".",end= "")
+		for mask1 in self.mask_list:
+			print(mask1,".",end="")
+		print("\t")
 		for item in self.mask_list:
-			print(item,bin(int(item)), sep ="\t",end = ".")
+			print(bin(int(item)),".",end = "")
 
 
 ipaddress1 = ipaddress("192.168.1.0","255.255.255.0")
